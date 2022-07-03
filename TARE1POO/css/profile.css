@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"); */ */ */ */
+
+.profile-info{
+    margin-bottom: 35px;
+}
+
+.profile-img{ /* max y menor de la img la img */
+    width: 70%;   
+    max-width: 300px;
+    
+}
+
+.profile{ /* centra todo perfil */
+    text-align: center;
+}
+
+.profile-title{ /* modifica titulo */
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: cadetblue;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.profile-details{ /* letras */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 450px;
+    margin: 20px auto;  
+}
+
+.profile-btn{ /* boton descargarcv */
+    background-color: cadetblue;
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-btn:hover{
+    filter: brightness(80%);
+}
+
+
+@media (min-width: 950px){
+    .profile{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .profile-info{
+        margin-bottom: 0;
+    }
+
+    .profile-img{
+        width: 90%;
+        max-width: 350px;
+        transform: scalex(-1);
+    }
+
+    .profile-title{
+        font-size: 60px;
+    }
+
+    .profile-details{
+        font-size: 25px;
+        margin: 30px 0;
+    }
+
+    .profile-btn{
+        font-size: 28px;
+    }
+}

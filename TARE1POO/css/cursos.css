@@ -1,0 +1,108 @@
+.cursos{
+    padding-top: 50px;
+}
+
+.courses-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 25px;
+}
+
+.cards{
+    max-width: 1200px; 
+    padding-bottom: 40px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 200px;
+    margin: 30px;
+    margin-top: 55px;
+    transition: all 300ms;
+}
+
+.card:hover .card_description{
+    margin-top: -15px;
+    opacity: 100%;
+}
+
+.card_icon{
+    width: 100%;
+    height: 220px;
+    background: var(--main-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 3px solid black;
+    border-block-end: 10px solid black;
+    border-radius: 20px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.card_icon:hover{
+    border-left: 9px solid black;
+    border-right: 9px solid black;
+    border-top: 9px solid black;
+    border-block-end: 20px solid black;
+    border-radius: 20px;
+}
+
+.card:hover .card_icon{
+    margin-top: -55px;
+}
+
+.card_icon i{
+    font-size: 150px;
+    color: black;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.c1:hover .card_icon{
+    background: navajowhite;
+}
+
+.c1:hover .card_icon i{
+    color: white;
+}
+
+.c2:hover .card_icon{
+    background: rgb(255, 230, 0);
+}
+
+.c2:hover .card_icon i{
+    color: white;
+}
+
+.c3:hover .card_icon{
+    background:cyan;
+}
+
+.c3:hover .card_icon i{
+    color: white;
+}
+
+.card_description{
+    opacity: 0%;
+    border-left: 3px solid var(--second-color);
+    border-right: 3px solid var(--second-color);
+    border-block-end: 3px solid var(--second-color);
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    width: 100%;
+    height: 200px;
+    background: rgba(128, 128, 128, 0.404);
+    padding: 20px;
+    margin-top: -200px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.card_description p{
+    margin-top: 20px;
+}
